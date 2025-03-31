@@ -1,0 +1,39 @@
+/* src/assets/styles/global.css */
+@import './colors.css';
+@import './typography.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--soft-white);
+  color: var(--charcoal-grey);
+}
+
+h1, h2, h3 {
+  color: var(--midnight-blue);
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--electric-cyan);
+  color: var(--soft-white);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--bright-orange);
+}
+
+input, select, textarea {
+  border: 1px solid var(--charcoal-grey);
+  padding: 10px;
+  border-radius: 8px;
+}
