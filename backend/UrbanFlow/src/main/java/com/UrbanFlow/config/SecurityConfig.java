@@ -19,7 +19,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/transit/**").permitAll()
                         .requestMatchers("/api/routes/**").permitAll()
                         .requestMatchers("/api/**").permitAll()
-                        // ✅ Ensure all transit APIs are accessible
+
                         .anyRequest().authenticated()  // Protect all other endpoints
                 )
                 .httpBasic(Customizer.withDefaults()); // Enable basic authentication for protected endpoints

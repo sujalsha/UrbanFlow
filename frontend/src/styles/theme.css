@@ -1,0 +1,17 @@
+/* Global CSS variables for the specified color scheme */
+:root {
+    --primary-midnight-blue: #003366;
+    --primary-electric-cyan: #00AEEF;
+    --secondary-lime-green: #A4C639;
+    --secondary-bright-orange: #FF6600;
+    --accent-soft-white: #F4F4F4;
+    --accent-charcoal-grey: #333333;
+  }
+  
+  /* Example of usage in a component */
+  body {
+    background-color: var(--accent-soft-white);
+    color: var(--accent-charcoal-grey);
+    font-family: Arial, sans-serif;
+  }
+  

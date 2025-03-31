@@ -1,0 +1,48 @@
+:root {
+    /* Primary Colors */
+    --primary-midnight-blue: #003366;
+    --primary-electric-cyan: #00AEEF;
+    
+    /* Secondary Colors */
+    --secondary-lime-green: #A4C639;
+    --secondary-bright-orange: #FF6600;
+    
+    /* Accent Colors */
+    --accent-soft-white: #F4F4F4;
+    --accent-charcoal-grey: #333333;
+  }
+  
+  /* Basic styling for landing page */
+  .landing-container {
+    background-color: var(--accent-soft-white);
+    color: var(--accent-charcoal-grey);
+    text-align: center;
+    padding: 4rem;
+  }
+  
+  .landing-title {
+    color: var(--primary-midnight-blue);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .landing-buttons .btn {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Using Primary and Secondary colors for buttons */
+  .btn.btn-primary {
+    background-color: var(--primary-electric-cyan);
+    color: var(--accent-soft-white);
+  }
+  
+  .btn.btn-secondary {
+    background-color: var(--secondary-bright-orange);
+    color: var(--accent-soft-white);
+  }
+  
