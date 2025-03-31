@@ -3,6 +3,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import pages
+import Navbar from './components/Navbar';
+import './styles/global.css'; // Global styles including your color scheme
 import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
 import UserDashboard from './pages/Dashboard/UserDashboard';
@@ -13,13 +15,16 @@ import RoutePlanning from './pages/Transit/RoutePlanning';
 import Ticketing from './pages/Ticketing/Ticketing';
 import Payments from './pages/Payments/Payments';
 import Preferences from './pages/Preferences/Preferences';
+import Landing from './pages/Landing.jsx';
+import ErrorBoundary from './components/ErrorBoundary';
 
 // You can add additional pages such as SystemStatus if needed
 
 function App() {
   return (
     <BrowserRouter>
-      {/* Common layout components such as Navbar can be added here if needed */}
+      <ErrorBoundary>
+      {<Navbar/>}
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/dashboard" element={<UserDashboard />} />
@@ -33,6 +38,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Routes>
+      </ErrorBoundary>
     </BrowserRouter>
   );
 }

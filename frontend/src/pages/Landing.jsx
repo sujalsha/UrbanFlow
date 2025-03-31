@@ -1,7 +1,7 @@
 // src/pages/Landing.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Landing.css'; // Import a CSS file for styling (see note below)
+//import './Landing.css'; // Import a CSS file for styling (see note below)
 
 const Landing = () => {
   return (
