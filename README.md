@@ -1,6 +1,6 @@
 # 🌍 UrbanFlow - Unified Public Transport System
 
-UrbanFlow is a full-stack smart mobility platform built to simplify urban transport. Inspired by Citymapper, UrbanFlow integrates real-time transit data, multi-modal route planning, QR-based ticketing, and payments—all in one sleek interface. The system supports users, employees (drivers, conductors), and administrators with role-based access control.
+UrbanFlow is a full-stack smart mobility platform built to simplify urban transport. UrbanFlow integrates real-time transit data, multi-modal route planning (Booking all the transport in your journy using a single ticket), QR-based ticketing, and payments—all in one sleek interface. The system supports users, employees (drivers, conductors), and administrators with role-based access control.
 
 ---
 
@@ -204,14 +204,6 @@ npm run dev
 
 ---
 
-## 🔮 Future Enhancements
-
-- Mobile App (React Native)
-- Real-time GPS tracking
-- PWA support
-- Firebase push notifications
-- SMS alerts with Twilio
-- AI-based delay predictions
 
 ---
 
