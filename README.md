@@ -16,7 +16,7 @@ UrbanFlow is a full-stack smart mobility platform built to simplify urban transp
 - Browse transit routes and stops using TfL Open API
 - View real-time schedules by stop
 
-### 🗺️ Route Planning (GraphHopper + OSM)
+### 🛩️ Route Planning (GraphHopper + OSM)
 - Plan optimal routes between two locations
 - Multi-modal journey planning (walk + bus + train)
 - Simulated real-time ETA per stop
@@ -47,7 +47,7 @@ UrbanFlow is a full-stack smart mobility platform built to simplify urban transp
 
 ---
 
-## 🖥️ Tech Stack
+## 💽 Tech Stack
 
 ### Backend
 - **Spring Boot 3.4**, Java 21
@@ -83,15 +83,40 @@ UrbanFlow is a full-stack smart mobility platform built to simplify urban transp
 
 ## 📁 Project Structure
 
-/backend/UrbanFlow/ ├── controller/ ├── service/ ├── repository/ ├── model/ ├── dto/ ├── utils/ ├── config/ └── UrbanFlowApplication.java
+### Backend
+```
+/backend/UrbanFlow/
+├── controller/
+├── service/
+├── repository/
+├── model/
+├── dto/
+├── utils/
+├── config/
+└── UrbanFlowApplication.java
+```
 
-/frontend/ ├── pages/ │ ├── Auth/ │ ├── Dashboard/ │ ├── Transit/ │ ├── Payments/ │ ├── Preferences/ │ └── Admin/ ├── components/ ├── services/ ├── styles/ ├── utils/ ├── App.jsx └── main.jsx
-
-
+### Frontend
+```
+/frontend/
+├── pages/
+│   ├── Auth/
+│   ├── Dashboard/
+│   ├── Transit/
+│   ├── Payments/
+│   ├── Preferences/
+│   └── Admin/
+├── components/
+├── services/
+├── styles/
+├── utils/
+├── App.jsx
+└── main.jsx
+```
 
 ---
 
-## 📦 APIs
+## 📦 API Endpoints
 
 ### 🔐 Authentication
 - `POST /api/auth/signup`
@@ -105,7 +130,7 @@ UrbanFlow is a full-stack smart mobility platform built to simplify urban transp
 - `GET /api/transit/stops/{routeId}`
 - `GET /api/transit/schedule/{stopId}`
 
-### 🗺️ Routing
+### 🛩️ Routing
 - `GET /api/routes/find`
 - `GET /api/routes/multimodal`
 - `GET /api/routes/liveETA/{stopId}`
@@ -150,17 +175,53 @@ UrbanFlow is a full-stack smart mobility platform built to simplify urban transp
 
 ---
 
-## 📦 Setup Instructions
+## ⚙️ Setup Instructions
 
 ### 📌 Backend
-
-
-# Clone and build backend
+```bash
+# Navigate to backend and run
 cd backend/UrbanFlow
 ./mvnw spring-boot:run
+```
+> Ensure MySQL is running and `application.properties` is properly configured.
 
-
-# Setup frontend
+### 💻 Frontend
+```bash
+# Navigate to frontend and run
 cd frontend/citymapper-frontend
 npm install
 npm run dev
+```
+> Vite dev server runs on [http://localhost:5173](http://localhost:5173)
+
+---
+
+## ✅ Validation Rules
+
+- **Email**: must follow standard email format
+- **Password**: must include at least 8 characters, with at least 1 letter and 1 number  
+  Regex used: `^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$`
+
+---
+
+## 🔮 Future Enhancements
+
+- Mobile App (React Native)
+- Real-time GPS tracking
+- PWA support
+- Firebase push notifications
+- SMS alerts with Twilio
+- AI-based delay predictions
+
+---
+
+
+---
+
+## 📬 Contact
+
+Built by **Sujal Sharma**
+
+- 📧 Email: [sujals.node@gmail.com](mailto:sujals.node@gmail.com)
+- 🌐 GitHub: [@sujalsha](https://github.com/sujalsha)
+
