@@ -85,7 +85,7 @@ UrbanFlow is a full-stack smart mobility platform built to simplify urban transp
 
 /backend/UrbanFlow/ ├── controller/ ├── service/ ├── repository/ ├── model/ ├── dto/ ├── utils/ ├── config/ └── UrbanFlowApplication.java
 
-/frontend/citymapper-frontend/ ├── pages/ │ ├── Auth/ │ ├── Dashboard/ │ ├── Transit/ │ ├── Payments/ │ ├── Preferences/ │ └── Admin/ ├── components/ ├── services/ ├── styles/ ├── utils/ ├── App.jsx └── main.jsx
+/frontend/ ├── pages/ │ ├── Auth/ │ ├── Dashboard/ │ ├── Transit/ │ ├── Payments/ │ ├── Preferences/ │ └── Admin/ ├── components/ ├── services/ ├── styles/ ├── utils/ ├── App.jsx └── main.jsx
 
 
 
