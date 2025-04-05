@@ -188,7 +188,7 @@ cd backend/UrbanFlow
 ### 💻 Frontend
 ```bash
 # Navigate to frontend and run
-cd frontend/citymapper-frontend
+cd frontend
 npm install
 npm run dev
 ```
